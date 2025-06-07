@@ -11,7 +11,7 @@ public class Main {
             System.out.println("Целое число " + i);
         }
 
-        for (int i = 0; i < 17; i = i + 2) {
+        for (int i = 0; i <= 17; i = i + 2) {
             System.out.println("Чётное число " + i);
         }
 
