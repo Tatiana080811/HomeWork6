@@ -29,10 +29,12 @@ public class Main {
         }
         int save = 29000;
         int total = 0;
+        double annualRate = 0.12;
+        double monthRate = annualRate/12;
 
-        for (int i = 0; i < 12; i++) {
-            total = total + save;
-            total = total + total / 100;
+        for (int i = 1; i <= 12; i++) {
+            total += save;
+            total *= (1 + monthRate);
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
         System.out.println(total);
